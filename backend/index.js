@@ -10,7 +10,7 @@ const noteRoutes = require("./routes/note.routes");
 app.use(express.json());
 app.use(
   cors({
-    origin: "*",
+    origin: "https://fsnotes-app.vercel.app/",
     methods: "GET,POST,PUT,DELETE",
     allowedHeaders: "Content-Type,Authorization",
     credentials: true,
