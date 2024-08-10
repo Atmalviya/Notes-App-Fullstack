@@ -8,14 +8,19 @@ const userRoutes = require("./routes/user.routes");
 const noteRoutes = require("./routes/note.routes");
 
 app.use(express.json());
+
+// CORS configuration
 app.use(
   cors({
-    origin: "https://fsnotes-app.vercel.app/",
+    origin: "https://fsnotes-app.vercel.app",
     methods: "GET,POST,PUT,DELETE",
-    allowedHeaders: "Content-Type,Authorization",
+    allowedHeaders: "Content-Type,Authorization,Accept,Origin",
     credentials: true,
   })
 );
+
+// Handle preflight requests
+app.options("*", cors());
 
 //* mongodb connection
 connecteDB();
