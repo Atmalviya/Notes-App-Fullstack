@@ -12,7 +12,7 @@ app.use(express.json());
 // CORS configuration
 app.use(
   cors({
-    origin: "https://fsnotes-app.vercel.app",
+    origin: "https://notesapp.atmalviya.cloud/",
     methods: "GET,POST,PUT,DELETE",
     allowedHeaders: "Content-Type,Authorization,Accept,Origin",
     credentials: true,
