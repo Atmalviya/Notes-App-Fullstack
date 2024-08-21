@@ -88,13 +88,13 @@ The application is hosted on Railway. You can access it at:
 
 ### Frontend Endpoint: 
 ```bash
-  https://notes-app-fe.up.railway.app
+  https://notesapp.atmalviya.cloud
 ```
 
 
 ### Backend Endpoint: 
 ```bash
-  https://notes-app-fs.up.railway.app/
+  https://notesapp-server.atmalviya.cloud/
 ```
 
 
